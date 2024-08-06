@@ -5,7 +5,7 @@ const db =[];
 let proxId = 1 ;
 
 const model = () => {
-    const nome = prompt ("Nome: "):
+    const nome = prompt ("Nome: ");
     if (nome != ""){
         return {
             id,
