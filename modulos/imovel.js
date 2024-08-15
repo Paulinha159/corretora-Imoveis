@@ -7,9 +7,10 @@ const db = [];
 let proxId = 1;
 
 const model = (id = proxId++) => {
+    const rua = prompt("Rua: ");
   const numero = parseInt(prompt("Numero: "));
   const bairro = prompt("Bairro: ");
-  const rua = prompt("Rua: ");
+  const cidade = prompt ("Cidade: ")
 
   let id_corretora = 0;
   if (corretora.index()) {
@@ -18,12 +19,13 @@ const model = (id = proxId++) => {
     console.log("Cadastre uma corretora para inserir um corretor");
   }
 
-  if (numero > 0 && bairro != "" && rua != "" && corretora.show(id_corretora)) {
+  if (numero > 0 && bairro != "" && rua != "" && corretora.show(id_corretora)&& cidade !="") {
     return {
       id,
+      rua,
       numero,
       bairro,
-      rua,
+      cidade,
       id_corretora,
     };
   }
